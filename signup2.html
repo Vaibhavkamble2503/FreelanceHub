@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Freelance Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .social-btn:hover {
+            background-color: #f7f7f7;
+        }
+
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .or-divider span {
+            margin: 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .create-account-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .create-account-btn:hover {
+            background-color: #218838;
+        }
+
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign up to find work you love</h2>
+
+        <div class="social-buttons">
+            <div class="social-btn">
+                <img src="https://img.icons8.com/ios-filled/50/apple-logo.png" alt="Apple">
+                Continue with Apple
+            </div>
+            <div class="social-btn">
+                <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+                Continue with Google
+            </div>
+        </div>
+
+        <div class="or-divider">
+            <span>or</span>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password (8 or more characters)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="India" selected>India</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="helpful-emails">
+                <label for="helpful-emails">Send me helpful emails to find rewarding work and job leads.</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    Yes, I understand and agree to the <a href="#" target="_blank">Terms of Service</a>, including the <a href="#" target="_blank">User Agreement</a> and <a href="#" target="_blank">Privacy Policy</a>.
+                </label>
+            </div>
+
+            <button type="submit" class="create-account-btn">Create my account</button>
+        </form>
+
+        <a href="#" class="login-link">Already have an account? Log In</a>
+    </div>
+</body>
+</html>

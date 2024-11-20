@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Freelance Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 360px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .login-container .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-container .btn:hover {
+            background-color: #218838;
+        }
+
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .or-divider span {
+            margin: 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .social-btn img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .social-btn:hover {
+            background-color: #f7f7f7;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Log in to FreelanceHub</h2>
+        <input type="text" placeholder="Username or Email">
+        <button class="btn">Continue</button>
+
+        <div class="or-divider">
+            <span>or</span>
+        </div>
+
+        <div class="social-btn">
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+            Continue with Google
+        </div>
+        <div class="social-btn">
+            <img src="https://img.icons8.com/ios-filled/50/apple-logo.png" alt="Apple">
+            Continue with Apple
+        </div>
+
+        <a href="#" class="signup-link">Don't have an FreelanceHub account? Sign Up</a>
+    </div>
+</body>
+</html>
